@@ -1,7 +1,7 @@
 public class Animal {
   protected String nome;
   protected String classe;
-  protected String família;
+  protected String familia;
   protected int idade;
   protected boolean estado;
   protected double calorias;
@@ -9,14 +9,16 @@ public class Animal {
 
   public Animal(String nome,
       String classe,
-      String família) {
+      String familia) {
     this.nome = nome;
     this.classe = classe;
-    this.família = família;
+    this.familia = familia;
     this.idade = 0;
     this.estado = true;
     this.calorias = 10;
     this.forca = (byte) 10;
+
+    System.out.println("O aninal se chama " + nome + " de classe: " + classe + " e família: " + familia + "\n e possui força " + forca + " ,calorias " + calorias + " e idade: " + idade);
   }
 
   public void comer(double caloriasDeglutidas) {
@@ -104,11 +106,11 @@ public class Animal {
   }
 
   public String getFamília() {
-    return família;
+    return familia;
   }
 
-  public void setFamília(String família) {
-    this.família = família;
+  public void setFamilia(String familia) {
+    this.familia = familia;
   }
 
   public int getIdade() {
